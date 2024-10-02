@@ -1,0 +1,39 @@
+{% load static %}
+{% for prods in techproducts %}
+<div class="row g-12 mt-none-12">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="xb-service xb-service1 mt-12">
+                                <div class="xb-item--inner">
+                                    <div class="xb-item--icon">
+                                        <img src="{{prods.tech_icon.url}}" alt="">
+                                    </div>
+                                    <h3 class="xb-item--title"><a href="#">{{prods.tech_title}}</a></h3>
+                                    <p class="xb-item--content">{{prods.tech_description}}</p>
+                                    <div class="xb-item--shape">
+                                        <img src="{% static 'assets/img/shape/srv_shape.png' %}" alt="">
+                                    </div>
+                                    <a class="xb-overlay" href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+{% empty %}
+
+<div class="row g-12 mt-none-12">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="xb-service xb-service1 mt-12">
+                                <div class="xb-item--inner">
+                                    <div class="xb-item--icon">
+                                        <img src="{{prods.tech_icon.url}}" alt="">
+                                    </div>
+                                    <p class="xb-item--content">No Product Tech To Display</p>
+                                    <div class="xb-item--shape">
+                                        <img src="{% static 'assets/img/shape/srv_shape.png' %}" alt="">
+                                    </div>
+                                    <a class="xb-overlay" href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+{% endfor %}

@@ -1,0 +1,412 @@
+{% extends 'base.html' %}
+{% load cms_tags menu_tags sekizai_tags %}
+{% load static %}
+{% block content%}
+
+       <!-- breadcrumb start -->
+            <section class="breadcrumb bg_img" data-bg-color="#E7E9EE" data-background="{% static 'assets/img/bg/page_title.png' %}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="breadcrumb__content">
+                                <h2 class="breadcrumb__title">{% page_attribute "page_title" %}</h2>
+                                <ul class="breadcrumb__list clearfix">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item">{% page_attribute "page_title" %}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- breadcrumb end -->
+
+       <!-- about start -->
+       <section class="about pt-145 pb-150">
+            <div class="container">
+                <div class="row mt-none-30 align-items-center">
+                    <div class="col-lg-6 mt-30">
+                        <div class="xb-about-content">
+                            <div class="sec-title about-sec-title mb-50">
+                                <h2 class="title mb-35">We committed to innovation for every business. Transform Your Business Future with Expert Technology Guidance</h2>
+                                <p class="mb-25">At PhoenixRise Interactive, we believe that every business, no matter the size or industry, deserves access to cutting-edge technology solutions. Our mission is to empower your organization by delivering innovative and customized IT strategies that align with your unique goals.</p>
+                                <p>Whether you're looking to streamline operations with advanced CRM and ERP systems, harness the potential of cloud infrastructure, or unlock actionable insights with data analytics, our team of experts is here to guide you every step of the way. We don’t just provide technology—we offer a partnership for your long-term success.</p>
+                            </div>
+                            <a class="xb-btn" href="contact.html">Talk to an Expert</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-30">
+                        <div class="xb-about-info">
+                            <div class="xb-about-info__item ul_li">
+                                <div class="xb-item--icon">
+                                    <img src="{% static 'assets/img/icon/chart-success.svg' %}" alt="">
+                                </div>
+                                <div class="xb-item--holder">
+                                    <h3 class="xb-item--title">Expert Technology Strategies</h3>
+                                    <p>Expert investment strategies are meticulously crafted plans designed to help individuals.</p>
+                                </div>
+                            </div>
+                            <div class="xb-about-info__item ul_li">
+                                <div class="xb-item--icon">
+                                    <img src="{% static 'assets/img/icon/graph.svg' %}" alt="">
+                                </div>
+                                <div class="xb-item--holder">
+                                    <h3 class="xb-item--title">Data Management Solution</h3>
+                                    <p>Risk management solutions are comprehensive approaches and tools that organizations use.</p>
+                                </div>
+                            </div>
+                            <div class="xb-about-info__item ul_li">
+                                <div class="xb-item--icon">
+                                    <img src="{% static 'assets/img/icon/status-up.svg' %}" alt="">
+                                </div>
+                                <div class="xb-item--holder">
+                                    <h3 class="xb-item--title">Customized Software Solutions</h3>
+                                    <p>Personalized financial planning is a holistic approach to managing one's finances.</p>
+                                </div>
+                            </div>
+                            <div class="xb-about-info__item ul_li">
+                                <div class="xb-item--icon">
+                                    <img src="{% static 'assets/img/icon/chart.svg' %}" alt="">
+                                </div>
+                                <div class="xb-item--holder">
+                                    <h3 class="xb-item--title">Business Automation</h3>
+                                    <p>Personalized financial planning is a holistic approach to managing one's finances.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+       <!-- about end -->
+
+       <!-- fanfact start -->
+       <section class="fanfact">
+            <video class="fanfact-video" src="{% static 'assets/img/about/about_video.mp4' %}" loop autoplay muted poster="{% static 'assets/img/about/about_video_poster.jpg' %}"></video>
+            <div class="container pos-rel">
+                <div class="xb-fanfact__inner ul_li_between">
+                    <div class="xb-fanfact2">
+                        <h3 class="number"><span class="xbo" data-count="250">00</span><span class="suffix">+</span></h3>
+                        <span>Success stories</span>
+                    </div>
+                    <div class="xb-fanfact2">
+                        <h3 class="number"><span class="xbo" data-count="15">00</span><span class="suffix">+</span></h3>
+                        <span>years of experience</span>
+                    </div>
+                    <div class="xb-fanfact2">
+                        <h3 class="number"><span class="xbo" data-count="2.7">00</span><span class="suffix">k</span></h3>
+                        <span>Companies trust us</span>
+                    </div>
+                    <div class="xb-fanfact2">
+                        <h3 class="number"><span class="xbo" data-count="100">00</span><span class="suffix">%</span></h3>
+                        <span>Results guaranteed</span>
+                    </div>
+                    <div class="xb-fanfact__shape">
+                        <div class="shape shape--1">
+                            <img src="{% static 'assets/img/shape/cnt_left.png' %}" alt="">
+                        </div>
+                        <div class="shape shape--2">
+                            <img src="{% static 'assets/img/shape/cnt_right.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>    
+            </div>
+       </section>
+       <!-- fanfact end -->
+       
+        <!-- feature start -->
+        <section class="mission mission-mt-none pt-150" data-bg-color="#E7E9EE">
+            <div class="container">
+                <div class="row align-items-start mt-none-30">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-30">
+                        <div class="xb-mission">
+                            <div class="xb-item--icon">
+                                <img src="{% static 'assets/img/icon/ms_01.png' %}" alt="">
+                            </div>
+                            <div class="xb-item--holder">
+                                <h3 class="xb-item--title">Our mission is very <br> simple and unique</h3>
+                                <p>Through our years of experience, we’ve also learned that while Through our years of experience, </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-30">
+                        <div class="xb-mission">
+                            <div class="xb-item--icon">
+                                <img src="{% static 'assets/img/icon/ms_02.png' %}" alt="">
+                            </div>
+                            <div class="xb-item--holder">
+                                <h3 class="xb-item--title">Our Vision for a More <br> Connected, Inclusive</h3>
+                                <p>Our vision is to improve  farming practices products and design that enrich  lives across</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-30">
+                        <div class="xb-mission">
+                            <div class="xb-item--icon">
+                                <img src="{% static 'assets/img/icon/ms_03.png' %}" alt="">
+                            </div>
+                            <div class="xb-item--holder">
+                                <h3 class="xb-item--title">finesse for Achieving <br> Your Greatest Goals</h3>
+                                <p>You need to find your audience and tell your story in a compelling way. You might also need help</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 mt-30">
+                        <div class="xb-mission">
+                            <div class="xb-item--icon">
+                                <img src="{% static 'assets/img/icon/ms_04.png' %}" alt="">
+                            </div>
+                            <div class="xb-item--holder">
+                                <h3 class="xb-item--title">We have over 26 <br> years of experience</h3>
+                                <p>Experience refers to  events in general, more practical knowledge specifically  as a conscious</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- feature end -->
+
+        <!-- testimonial start -->
+        <section class="testimonial pt-130 pos-rel z-1 pb-160" data-bg-color="#E7E9EE">
+            <div class="container px-60">
+                <div class="sec-title text-center mb-90">
+                    <span class="subtitle ul_li"><img src="{% static 'assets/img/icon/hr_icon.png' %}" alt=""> See Seargin Success Stories </span>
+                    <h2 class="title">Many Clients love us</h2>
+                </div>
+                <div class="row">
+                    <div class="xb-swiper-sliders">
+                        <div class="xb-carousel-inner">
+                            <div class="xb-testimonial-sldier xb-swiper-container swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="xb-swiper-slide swiper-slide xb-testimonial xb-testimonial1">
+                                        <div class="xb-item--inner">
+                                            <div class="xb-item--avatar">
+                                                <img src="{% static 'assets/img/avatar/tm_01.png' %}" alt="">
+                                                <div class="xb-item--quote">
+                                                    <img src="{% static 'assets/img/icon/quote.png' %}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="xb-item--author mb-45">
+                                                <h3 class="xb-item--name">DC Dena White </h3>
+                                                <span class="xb-item--desig">DC Dena White </span>
+                                            </div>
+                                            <div class="xb-item--content mb-40">
+                                                “ Working with Seargin has been a game-changing  for my business. Their financial insights and guidance have been helped us grow and thrive of my business “
+                                            </div>
+                                            <div class="xb-item--bottom ul_li_between">
+                                                <img src="{% static 'assets/img/icon/trustpilot.png' %}" alt="">
+                                                <span>4.6 Trustpilot Rating</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="xb-swiper-slide swiper-slide xb-testimonial xb-testimonial1">
+                                        <div class="xb-item--inner">
+                                            <div class="xb-item--avatar">
+                                                <img src="{% static 'assets/img/avatar/tm_02.png' %}" alt="">
+                                                <div class="xb-item--quote">
+                                                    <img src="{% static 'assets/img/icon/quote.png' %}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="xb-item--author mb-45">
+                                                <h3 class="xb-item--name">Khamjat Chimairia</h3>
+                                                <span class="xb-item--desig">Founder of UFC</span>
+                                            </div>
+                                            <div class="xb-item--content mb-40">
+                                                “ I've been with Seargin for years, and they've consistently delivered exceptional results. Their investment strategies have secured my family's financial well-being."
+                                            </div>
+                                            <div class="xb-item--bottom ul_li_between">
+                                                <img src="{% static 'assets/img/icon/trustpilot.png' %}" alt="">
+                                                <span>4.6 Trustpilot Rating</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="xb-swiper-slide swiper-slide xb-testimonial xb-testimonial1">
+                                        <div class="xb-item--inner">
+                                            <div class="xb-item--avatar">
+                                                <img src="{% static 'assets/img/avatar/tm_01.png' %}" alt="">
+                                                <div class="xb-item--quote">
+                                                    <img src="{% static 'assets/img/icon/quote.png' %}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="xb-item--author mb-45">
+                                                <h3 class="xb-item--name">DC Dena White </h3>
+                                                <span class="xb-item--desig">DC Dena White </span>
+                                            </div>
+                                            <div class="xb-item--content mb-40">
+                                                “ Working with Seargin has been a game-changing  for my business. Their financial insights and guidance have been helped us grow and thrive of my business “
+                                            </div>
+                                            <div class="xb-item--bottom ul_li_between">
+                                                <img src="{% static 'assets/img/icon/trustpilot.png' %}" alt="">
+                                                <span>4.6 Trustpilot Rating</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="xb-swiper-slide swiper-slide xb-testimonial xb-testimonial1">
+                                        <div class="xb-item--inner">
+                                            <div class="xb-item--avatar">
+                                                <img src="{% static 'assets/img/avatar/tm_02.png' %}" alt="">
+                                                <div class="xb-item--quote">
+                                                    <img src="{% static 'assets/img/icon/quote.png' %}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="xb-item--author mb-45">
+                                                <h3 class="xb-item--name">Khamjat Chimairia</h3>
+                                                <span class="xb-item--desig">Founder of UFC</span>
+                                            </div>
+                                            <div class="xb-item--content mb-40">
+                                                “ I've been with Seargin for years, and they've consistently delivered exceptional results. Their investment strategies have secured my family's financial well-being."
+                                            </div>
+                                            <div class="xb-item--bottom ul_li_between">
+                                                <img src="{% static 'assets/img/icon/trustpilot.png' %}" alt="">
+                                                <span>4.6 Trustpilot Rating</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pagination-style1 swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-shape2">
+                <div class="shape shape--1">
+                    <img data-parallax='{"y": "-90"}' src="{% static 'assets/img/shape/srv_shape1.png' %}" alt="">
+                </div>
+                <div class="shape shape--2">
+                    <img data-parallax='{"y": "90"}' src="{% static 'assets/img/shape/srv_shape2.png' %}" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- testimonial end -->
+    
+        <!-- team start -->
+        <section class="team bg_img pt-140 pb-140" data-background="{% static 'assets/img/bg/team_bg.jpg' %}">
+            <div class="container px-60">
+                <div class="sec-title sec-title--white text-center mb-70" data-aos="fade-up" data-aos-duration="600">
+                    <span class="subtitle ul_li"><img src="{% static 'assets/img/icon/hr_icon.png' %}" alt=""> Our Team</span>
+                    <h2 class="title">Our Financial Experts</h2>
+                </div>
+                <div class="xb-swiper-sliders" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                    <div class="xb-carousel-inner">
+                        <div class="xb-team-sldier xb-swiper-container swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="xb-swiper-slide swiper-slide xb-team xb-team1">
+                                    <div class="xb-item--inner">
+                                        <div class="xb-item--holder mb-25">
+                                            <h3 class="xb-item--name">OM Shan Omaly</h3>
+                                            <span class="xb-item--desig">Finance Consultant</span>
+                                        </div>
+                                        <div class="xb-item--img">
+                                            <img src="{% static 'assets/img/team/img_01.png' %}" alt="">
+                                        </div>
+                                        <div class="xb-item--shape">
+                                            <img src="{% static 'assets/img/shape/team_shape.png' %}" alt="">
+                                        </div>
+                                        <ul class="xb-item--social ul_li_center">
+                                            <li><a class="twitter" href="#!"><img src="{% static 'assets/img/icon/twitter-x.svg' %}" alt=""></a></li>
+                                            <li><a class="linkedin" href="#!"><i class="fab fa-linkedin"></i></a></li>
+                                            <li><a class="youtube" href="#!"><i class="fab fa-youtube"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="xb-swiper-slide swiper-slide xb-team xb-team1">
+                                    <div class="xb-item--inner">
+                                        <div class="xb-item--holder mb-25">
+                                            <h3 class="xb-item--name">OM Shan Omaly</h3>
+                                            <span class="xb-item--desig">Finance Consultant</span>
+                                        </div>
+                                        <div class="xb-item--img">
+                                            <img src="{% static 'assets/img/team/img_02.png' %}" alt="">
+                                        </div>
+                                        <div class="xb-item--shape">
+                                            <img src="{% static 'assets/img/shape/team_shape.png' %}" alt="">
+                                        </div>
+                                        <ul class="xb-item--social ul_li_center">
+                                            <li><a class="twitter" href="#!"><img src="{% static 'assets/img/icon/twitter-x.svg' %}" alt=""></a></li>
+                                            <li><a class="linkedin" href="#!"><i class="fab fa-linkedin"></i></a></li>
+                                            <li><a class="youtube" href="#!"><i class="fab fa-youtube"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="xb-swiper-slide swiper-slide xb-team xb-team1">
+                                    <div class="xb-item--inner">
+                                        <div class="xb-item--holder mb-25">
+                                            <h3 class="xb-item--name">OM Shan Omaly</h3>
+                                            <span class="xb-item--desig">Finance Consultant</span>
+                                        </div>
+                                        <div class="xb-item--img">
+                                            <img src="{% static 'assets/img/team/img_03.png' %}" alt="">
+                                        </div>
+                                        <div class="xb-item--shape">
+                                            <img src="{% static 'assets/img/shape/team_shape.png' %}" alt="">
+                                        </div>
+                                        <ul class="xb-item--social ul_li_center">
+                                            <li><a class="twitter" href="#!"><img src="{% static 'assets/img/icon/twitter-x.svg' %}" alt=""></a></li>
+                                            <li><a class="linkedin" href="#!"><i class="fab fa-linkedin"></i></a></li>
+                                            <li><a class="youtube" href="#!"><i class="fab fa-youtube"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="xb-swiper-slide swiper-slide xb-team xb-team1">
+                                    <div class="xb-item--inner">
+                                        <div class="xb-item--holder mb-25">
+                                            <h3 class="xb-item--name">OM Shan Omaly</h3>
+                                            <span class="xb-item--desig">Finance Consultant</span>
+                                        </div>
+                                        <div class="xb-item--img">
+                                            <img src="{% static 'assets/img/team/img_01.png' %}" alt="">
+                                        </div>
+                                        <div class="xb-item--shape">
+                                            <img src="{% static 'assets/img/shape/team_shape.png' %}" alt="">
+                                        </div>
+                                        <ul class="xb-item--social ul_li_center">
+                                            <li><a class="twitter" href="#!"><img src="{% static 'assets/img/icon/twitter-x.svg' %}" alt=""></a></li>
+                                            <li><a class="linkedin" href="#!"><i class="fab fa-linkedin"></i></a></li>
+                                            <li><a class="youtube" href="#!"><i class="fab fa-youtube"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination-style1 swiper-pagination style-white"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- team end -->
+
+        <!-- marquee start -->
+        <section class="marquee pt-140 pb-150">
+            <div class="container">
+                <div class="sec-title text-center mb-25">
+                    <span class="subtitle ul_li">Trusted by over 500+ clients worldwide</span>
+                </div>
+            </div>
+            <div class="xb-marquee marquee-left mb-40">
+                <div class="xb-marquee__item"><img src="{% static 'assets/img/brand/brand_01.png' %}" alt=""></div>
+                <div class="xb-marquee__item"><img src="{% static 'assets/img/brand/brand_02.png' %}" alt=""></div>
+                <div class="xb-marquee__item"><img src="{% static 'assets/img/brand/brand_03.png' %}" alt=""></div>
+                <div class="xb-marquee__item"><img src="{% static 'assets/img/brand/brand_04.png' %}" alt=""></div>
+                <div class="xb-marquee__item"><img src="{% static 'assets/img/brand/brand_05.png' %}" alt=""></div>
+                <div class="xb-marquee__item"><img src="{% static 'assets/img/brand/brand_06.png' %}" alt=""></div>
+                <div class="xb-marquee__item"><img src="{% static 'assets/img/brand/brand_07.png' %}" alt=""></div>
+                <div class="xb-marquee__item"><img src="{% static 'assets/img/brand/brand_08.png' %}" alt=""></div>
+                <div class="xb-marquee__item"><img src="{% static 'assets/img/brand/brand_09.png' %}" alt=""></div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="xb-marquee marquee-right">
+                <div class="xb-marquee__item"><img src="{% static 'assets/img/brand/brand_10.png' %}" alt=""></div>
+                <div class="xb-marquee__item"><img src="{% static 'assets/img/brand/brand_11.png' %}" alt=""></div>
+                <div class="xb-marquee__item"><img src="{% static 'assets/img/brand/brand_12.png' %}" alt=""></div>
+                <div class="xb-marquee__item"><img src="{% static 'assets/img/brand/brand_13.png' %}" alt=""></div>
+                <div class="xb-marquee__item"><img src="{% static 'assets/img/brand/brand_14.png' %}" alt=""></div>
+                <div class="xb-marquee__item"><img src="{% static 'assets/img/brand/brand_15.png' %}" alt=""></div>
+                <div class="xb-marquee__item"><img src="{% static 'assets/img/brand/brand_03.png' %}" alt=""></div>
+                <div class="xb-marquee__item"><img src="{% static 'assets/img/brand/brand_06.png' %}" alt=""></div>
+                <div class="xb-marquee__item"><img src="{% static 'assets/img/brand/brand_09.png' %}" alt=""></div>
+            </div>
+        </section>
+        <!-- marquee end -->
+{% endblock %}

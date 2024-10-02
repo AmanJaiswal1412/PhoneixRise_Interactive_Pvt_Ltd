@@ -1,0 +1,601 @@
+{% extends 'base.html' %}
+{% load cms_tags menu_tags sekizai_tags %}
+{% load static %}
+{% block content%}
+        <!-- hero start -->
+        <section class="hero hero-default ul_li bg_img" data-bg-color="#E7E9EE" data-background="{% static 'assets/img/bg/hero_bg.png' %}">
+            <div class="container px-60">
+                <div class="row align-items-center">
+                    <div class="hero-content">
+                        <div class="sec-title mb-40">
+                            <span class="subtitle ul_li" data-aos="fade-up" data-aos-duration="600"><img src="{% static 'assets/img/icon/hr_icon.png' %}" alt=""> Strategic Technology Guidance</span>
+                            <h2 class="title title-big" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Empowering Businesses with<br> Next-Gen Business Solutions</h2>
+                        </div>
+                        <ul class="xb-item--list list-unstyled mb-60" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
+                            <li><i class="far fa-check"></i>CRM & ERP Solutions</li>
+                            <li><i class="far fa-check"></i>Data & Analytics Management</li>
+                            <li><i class="far fa-check"></i>Cloud Infrastructure Solutions</li>
+                        </ul>
+                        <div class="xb-item--btn btns" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
+                            <a class="xb-btn" href="/contact-us/">Talk to an Expert</a>
+                            <a class="xb-btn xb-btn--white" href="/our-expertise/">Discover Our Solutions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- hero end -->
+
+        <!-- feature start -->
+        <section class="feature feature-pb pt-150 pb-150" data-background="{% static 'assets/img/bg/feat_bg.jpg' %}">
+            <div class="container px-60">
+                <div class="row align-items-start mt-none-30">
+                    <div class="col-xl-4 col-lg-4 mt-30" data-aos="fade-left" data-aos-duration="900">
+                        <div class="sec-title sec-title--white">
+                            <span class="subtitle ul_li"><img src="{% static 'assets/img/icon/hr_icon.png' %}" alt=""> Tailored software solutions that streamline operations and accelerate growth</span>
+                            <h2 class="title mb-55">Your Business Growth <br> is Our Commitment to <br> Innovation</h2>
+                            <p class="mb-25">Our mission is to cultivate technological excellence in every aspect of our clients' lives. we are committed to providing</p>
+                            <p>tailored, holistic technology solutions that align with our clients' unique needs and circumstances.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 offset-xl-3 col-lg-6 offset-lg-2 mt-30" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
+                        <div class="xb-feature__wrap ul_li">
+                            <div class="xb-feature xb-feature2 mt-70">
+                                <div class="xb-item--icon">
+                                    <img src="{% static 'assets/img/icon/feat_01.svg' %}" alt="">
+                                </div>
+                                <h3 class="xb-item--title">CRM & ERP Development</h3>
+                                <p class="xb-item--content">Optimize workflows and improve customer engagement</p>
+                            </div>
+                            <div class="xb-feature xb-feature2 mt-70">
+                                <div class="xb-item--icon">
+                                    <img src="{% static 'assets/img/icon/feat_02.svg' %}" alt="">
+                                </div>
+                                <h3 class="xb-item--title">Cloud Infrastructure</h3>
+                                <p class="xb-item--content">Scalable and secure cloud solutions for all your business needs</p>
+                            </div>
+                            <div class="xb-feature xb-feature2 mt-70">
+                                <div class="xb-item--icon">
+                                    <img src="{% static 'assets/img/icon/feat_03.svg' %}" alt="">
+                                </div>
+                                <h3 class="xb-item--title">Data & Analytics</h3>
+                                <p class="xb-item--content">Harness the power of data to make smarter business decisions</p>
+                            </div>
+                            <div class="xb-feature xb-feature2 mt-70">
+                                <div class="xb-item--icon">
+                                    <img src="{% static 'assets/img/icon/feat_04.svg' %}" alt="">
+                                </div>
+                                <h3 class="xb-item--title">Task Automation</h3>
+                                <p class="xb-item--content">Automated you daily operations for better productivity</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- feature end -->
+
+        <!-- cta start -->
+        <section class="cta z-1 pos-rel" data-bg-color="#E7E9EE">
+            <div class="container px-60">
+                <div class="xb-cta">
+                    <div class="xb-item--inner ul_li_between">
+                        <div class="xb-icon-img ul_li mt-15">
+                            <div class="icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="avatar">
+                                <img src="{% static 'assets/img/avatar/cta_avatar.png' %}" alt="">
+                            </div>
+                        </div>
+                        <h3 class="xb-item--number mt-15">+1-202-555-0160</h3>
+                        <p class="xb-item--content mt-15">Use our Hotline for quick get <br> in touch for  24 hours</p>
+                        <div class="xb-item--icon mt-15">
+                            <img src="{% static 'assets/img/icon/cta_message_icon.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- cta end -->
+
+        <!-- services start -->
+        <section class="services z-1 pos-rel pt-65 pb-150" data-bg-color="#E7E9EE">
+            <div class="container px-60">
+                <div class="row justify-content-center g-12 mt-none-12">
+                    <div class="col-lg-4">
+                        <div class="xb-service__sec-title mt-12">
+                            <div class="sec-title">
+                                <span class="subtitle ul_li"><img src="{% static 'assets/img/icon/hr_icon.png' %}" alt=""> Services</span>
+                                <h2 class="title mb-20">Core <br> Solutions</h2>
+                                <p>Celebrate Power of Technology Services: <br> Your Gateway to Success</p>
+                            </div>
+                            <div class="xb-service__img">
+                                <img src="{% static 'assets/img/service/sec_img.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="xb-service xb-service1 mt-12">
+                            <div class="xb-item--inner">
+                                <div class="xb-item--icon">
+                                    <img src="{% static 'assets/img/icon/srv_01.svg' %}" alt="">
+                                </div>
+                                <h3 class="xb-item--title"><a href="service-single.html">CRM & ERP Solutions</a></h3>
+                                <p class="xb-item--content">Grow and Protect Your Investments</p>
+                                <div class="xb-item--shape">
+                                    <img src="{% static 'assets/img/shape/srv_shape.png' %}" alt="">
+                                </div>
+                                <a class="xb-overlay" href="service-single.html"></a>
+                            </div>
+                        </div>
+                        <div class="xb-service xb-service1 mt-12">
+                            <div class="xb-item--inner">
+                                <div class="xb-item--icon">
+                                    <img src="{% static 'assets/img/icon/srv_03.svg' %}" alt="">
+                                </div>
+                                <h3 class="xb-item--title"><a href="service-single.html">Data Management & Analytics</a></h3>
+                                <p class="xb-item--content">Pass on Your Legacy Wisely</p>
+                                <div class="xb-item--shape">
+                                    <img src="{% static 'assets/img/shape/srv_shape.png' %}" alt="">
+                                </div>
+                                <a class="xb-overlay" href="service-single.html"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="xb-service xb-service1 mt-12">
+                            <div class="xb-item--inner">
+                                <div class="xb-item--icon">
+                                    <img src="{% static 'assets/img/icon/srv_02.svg' %}" alt="">
+                                </div>
+                                <h3 class="xb-item--title"><a href="service-single.html">Robotic Process Automation</a></h3>
+                                <p class="xb-item--content">Prepare for  Comfortable Retirement</p>
+                                <div class="xb-item--shape">
+                                    <img src="{% static 'assets/img/shape/srv_shape.png' %}" alt="">
+                                </div>
+                                <a class="xb-overlay" href="service-single.html"></a>
+                            </div>
+                        </div>
+                        <div class="xb-service xb-service1 mt-12">
+                            <div class="xb-item--inner">
+                                <div class="xb-item--icon">
+                                    <img src="{% static 'assets/img/icon/srv_04.svg' %}" alt="">
+                                </div>
+                                <h3 class="xb-item--title"><a href="service-single.html">Cloud Infrastructure Solutions</a></h3>
+                                <p class="xb-item--content">Secure Your Financial Future</p>
+                                <div class="xb-item--shape">
+                                    <img src="{% static 'assets/img/shape/srv_shape.png' %}" alt="">
+                                </div>
+                                <a class="xb-overlay" href="service-single.html"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="xb-service xb-service1 mt-12">
+                            <div class="xb-item--inner">
+                                <div class="xb-item--icon">
+                                    <img src="{% static 'assets/img/icon/srv_05.svg' %}" alt="">
+                                </div>
+                                <h3 class="xb-item--title"><a href="service-single.html">Technology <br> Consulting</a></h3>
+                                <p class="xb-item--content">Minimize Your Tax Burden</p>
+                                <div class="xb-item--shape">
+                                    <img src="{% static 'assets/img/shape/srv_shape.png' %}" alt="">
+                                </div>
+                                <a class="xb-overlay" href="service-single.html"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="xb-service xb-service1 mt-12">
+                            <div class="xb-item--inner">
+                                <div class="xb-item--icon">
+                                    <img src="{% static 'assets/img/icon/srv_06.svg' %}" alt="">
+                                </div>
+                                <h3 class="xb-item--title"><a href="service-single.html">Market Research & Tech Strategy</a></h3>
+                                <p class="xb-item--content">Take Control of Your Debt</p>
+                                <div class="xb-item--shape">
+                                    <img src="{% static 'assets/img/shape/srv_shape.png' %}" alt="">
+                                </div>
+                                <a class="xb-overlay" href="service-single.html"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-8">
+                        <div class="xb-service xb-service1 mt-12">
+                            <div class="xb-item--inner">
+                                <div class="xb-item--icon">
+                                    <img src="{% static 'assets/img/icon/srv_07.svg' %}" alt="">
+                                </div>
+                                <h3 class="xb-item--title"><a href="service-single.html">Risk Assessment and Insurance Solutions</a></h3>
+                                <p class="xb-item--content">Safeguard Against Life's Uncertainties</p>
+                                <div class="xb-item--shape">
+                                    <img src="{% static 'assets/img/shape/srv_shape.png' %}" alt="">
+                                </div>
+                                <a class="xb-overlay" href="service-single.html"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xb-service__shape">
+                <div class="shape shape--1">
+                    <img data-parallax='{"y": "-90"}' src="{% static 'assets/img/shape/srv_shape1.png' %}" alt="">
+                </div>
+                <div class="shape shape--2">
+                    <img data-parallax='{"y": "90"}' src="{% static 'assets/img/shape/srv_shape2.png' %}" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- services end -->
+    
+        <!-- CS start -->
+        <section class="blog pt-150 pb-150">
+            <div class="container">
+                <div class="row g-12 mt-none-12">
+                    <div class="col-lg-6 mt-12">
+                        <div class="xb-blog h-100">
+                            <div class="xb-item--inner ul_li h-100" data-bg-color="#F3F4F5">
+                                <div class="sec-title">
+                                    <span class="subtitle ul_li"><img src="{% static 'assets/img/icon/hr_icon.png' %}" alt="">Check our Recent Works</span>
+                                    <h2 class="title mb-40">Explore Financial Insights</h2>
+                                    <p>Stay Informed and Empower Your Financial Future with <br> Our Popular Blog and Articles</p>
+                                </div>
+                                <div class="xb-item--shape">
+                                    <img src="{% static 'assets/img/shape/blog_shape.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-12">
+                        <div class="xb-blog">
+                            <div class="xb-item--inner">
+                                <span class="xb-item--cat">Finance Planing</span>
+                                <h2 class="xb-item--title border-effect"><a href="blog-single.html">Financial Mistakes to Avoid in Your 30s, 40s, and Beyond</a></h2>
+                                <p class="xb-item--content">Stay Informed and Empower Your Financial Future with Our Popular Blog and Articles and most popular insight ever.</p>
+                                <div class="xb-item--meta ul_li_between">
+                                    <div class="xb-item--author ul_li">
+                                        <div class="xb-item--avatar">
+                                            <img src="{% static 'assets/img/avatar/blog_avatar1.png' %}" alt="">
+                                        </div>
+                                        <span class="xb-item--name">Malandiya Dime</span>
+                                    </div>
+                                    <span class="xb-item--like">260 <i class="fas fa-heart"></i></span>
+                                    <span class="xb-item--date">12.January.2021<i class="far fa-clock"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-12">
+                        <div class="xb-blog">
+                            <div class="xb-item--inner">
+                                <span class="xb-item--cat color-2">Business' Managements</span>
+                                <h2 class="xb-item--title border-effect"><a href="blog-single.html">The Art of Budgeting Building Wealth One Dollar at a Time</a></h2>
+                                <p class="xb-item--content">Stay Informed and Empower Your Financial Future with Our Popular Blog and Articles and most popular insight ever.</p>
+                                <div class="xb-item--meta ul_li_between">
+                                    <div class="xb-item--author ul_li">
+                                        <div class="xb-item--avatar">
+                                            <img src="{% static 'assets/img/avatar/blog_avatar2.png' %}" alt="">
+                                        </div>
+                                        <span class="xb-item--name">OM Shan Omaly</span>
+                                    </div>
+                                    <span class="xb-item--like">450 <i class="fas fa-heart"></i></span>
+                                    <span class="xb-item--date">12.January.2021<i class="far fa-clock"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-12">
+                        <div class="xb-blog">
+                            <div class="xb-item--inner">
+                                <span class="xb-item--cat color-3">Insurance 2023</span>
+                                <h2 class="xb-item--title border-effect"><a href="blog-single.html">Planning for College  Navigating the Costs and Options</a></h2>
+                                <p class="xb-item--content">Stay Informed and Empower Your Financial Future with Our Popular Blog and Articles and most popular insight ever.</p>
+                                <div class="xb-item--meta ul_li_between">
+                                    <div class="xb-item--author ul_li">
+                                        <div class="xb-item--avatar">
+                                            <img src="{% static 'assets/img/avatar/blog_avatar3.png' %}" alt="">
+                                        </div>
+                                        <span class="xb-item--name">Corner Megrego</span>
+                                    </div>
+                                    <span class="xb-item--like">180 <i class="fas fa-heart"></i></span>
+                                    <span class="xb-item--date">12.January.2021<i class="far fa-clock"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="xb-blog__btn mt-60 text-center">
+                    <a class="xb-btn" href="blog.html">See More INsight</a>
+                </div>
+            </div>
+        </section>
+        <!-- CS end -->
+
+        <!-- testimonial start -->
+        <section class="testimonial pos-rel z-1 pt-140 pb-70" data-bg-color="#E7E9EE">
+            <div class="container px-60">
+                <div class="sec-title">
+                    <span class="subtitle ul_li"><img src="{% static 'assets/img/icon/hr_icon.png' %}" alt=""> See Our Success Stories </span>
+                    <h2 class="title mb-40">Join the Tech Success Story – Become Our <br> Next Thriving Partner</h2>
+                    <h2 class="xb-grd-number d-flex mb-30">
+                        <div><span class="xbo" data-count="3">00</span></div>
+                        <div><span class="xbo" data-count="4">00</span></div>
+                        <div><span class="xbo" data-count="3">00</span></div>
+                        <div><span class="xbo" data-count="5">00</span></div>
+                        <div><span class="xbo" data-count="3">00</span></div>
+                        <div><span class="suffix">+</span></div>
+                    </h2>
+                    <h5 class="text-heading text-24 text-bold weight-medium">Over 24,000 Success Stories: Hear From Our Satisfied Clients</h5>
+                </div>
+                <div class="row mt-140">
+                    <div class="xb-swiper-sliders">
+                        <div class="xb-carousel-inner">
+                            <div class="xb-testimonial-sldier xb-swiper-container swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="xb-swiper-slide swiper-slide xb-testimonial xb-testimonial1">
+                                        <div class="xb-item--inner">
+                                            <div class="xb-item--avatar">
+                                                <img src="{% static 'assets/img/avatar/tm_01.png' %}" alt="">
+                                                <div class="xb-item--quote">
+                                                    <img src="{% static 'assets/img/icon/quote.png' %}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="xb-item--author mb-45">
+                                                <h3 class="xb-item--name">DC Dena White </h3>
+                                                <span class="xb-item--desig">DC Dena White </span>
+                                            </div>
+                                            <div class="xb-item--content mb-40">
+                                                “ Working with Seargin has been a game-changing  for my business. Their financial insights and guidance have been helped us grow and thrive of my business “
+                                            </div>
+                                            <div class="xb-item--bottom ul_li_between">
+                                                <img src="{% static 'assets/img/icon/trustpilot.png' %}" alt="">
+                                                <span>4.6 Trustpilot Rating</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="xb-swiper-slide swiper-slide xb-testimonial xb-testimonial1">
+                                        <div class="xb-item--inner">
+                                            <div class="xb-item--avatar">
+                                                <img src="{% static 'assets/img/avatar/tm_02.png' %}" alt="">
+                                                <div class="xb-item--quote">
+                                                    <img src="{% static 'assets/img/icon/quote.png' %}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="xb-item--author mb-45">
+                                                <h3 class="xb-item--name">Khamjat Chimairia</h3>
+                                                <span class="xb-item--desig">Founder of UFC</span>
+                                            </div>
+                                            <div class="xb-item--content mb-40">
+                                                “ I've been with Seargin for years, and they've consistently delivered exceptional results. Their investment strategies have secured my family's financial well-being."
+                                            </div>
+                                            <div class="xb-item--bottom ul_li_between">
+                                                <img src="{% static 'assets/img/icon/trustpilot.png' %}" alt="">
+                                                <span>4.6 Trustpilot Rating</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="xb-swiper-slide swiper-slide xb-testimonial xb-testimonial1">
+                                        <div class="xb-item--inner">
+                                            <div class="xb-item--avatar">
+                                                <img src="{% static 'assets/img/avatar/tm_01.png' %}" alt="">
+                                                <div class="xb-item--quote">
+                                                    <img src="{% static 'assets/img/icon/quote.png' %}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="xb-item--author mb-45">
+                                                <h3 class="xb-item--name">DC Dena White </h3>
+                                                <span class="xb-item--desig">DC Dena White </span>
+                                            </div>
+                                            <div class="xb-item--content mb-40">
+                                                “ Working with Seargin has been a game-changing  for my business. Their financial insights and guidance have been helped us grow and thrive of my business “
+                                            </div>
+                                            <div class="xb-item--bottom ul_li_between">
+                                                <img src="{% static 'assets/img/icon/trustpilot.png' %}" alt="">
+                                                <span>4.6 Trustpilot Rating</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="xb-swiper-slide swiper-slide xb-testimonial xb-testimonial1">
+                                        <div class="xb-item--inner">
+                                            <div class="xb-item--avatar">
+                                                <img src="{% static 'assets/img/avatar/tm_02.png' %}" alt="">
+                                                <div class="xb-item--quote">
+                                                    <img src="{% static 'assets/img/icon/quote.png' %}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="xb-item--author mb-45">
+                                                <h3 class="xb-item--name">Khamjat Chimairia</h3>
+                                                <span class="xb-item--desig">Founder of UFC</span>
+                                            </div>
+                                            <div class="xb-item--content mb-40">
+                                                “ I've been with Seargin for years, and they've consistently delivered exceptional results. Their investment strategies have secured my family's financial well-being."
+                                            </div>
+                                            <div class="xb-item--bottom ul_li_between">
+                                                <img src="{% static 'assets/img/icon/trustpilot.png' %}" alt="">
+                                                <span>4.6 Trustpilot Rating</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pagination-style1 swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-map">
+                <img src="{% static 'assets/img/shape/map.png' %}" alt="">
+                <div class="testimonial-map__dot">
+                    <span class="dot dot--1"></span>
+                    <span class="dot dot--2"></span>
+                </div>
+            </div>
+            <div class="testimonial-shape">
+                <img data-parallax='{"y": "-90"}' src="{% static 'assets/img/shape/tm_shape2.png' %}" alt="">
+            </div>
+        </section>
+        <!-- testimonial end -->
+
+        <!-- contact start -->
+        <section class="contact z-1 pos-rel pb-120" data-bg-color="#E7E9EE">
+            <div class="container px-60">
+                <div class="xb-contact__wrap">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="xb-contact__inner">
+                                <div class="sec-title mb-45">
+                                    <span class="subtitle ul_li"><img src="{% static 'assets/img/icon/hr_icon.png' %}" alt="">Get In Touch WITH US</span>
+                                    <h2 class="title">Contact us Today for Expert <br> Technology Guidance</h2>
+                                </div>
+                                <form action="#" class="xb-contact">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="xb-item--field">
+                                                <span><img src="{% static 'assets/img/icon/ins_user.svg' %}" alt=""></span>
+                                                <input type="text" placeholder="Khamjat Chimaiya">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="xb-item--field">
+                                                <span><img src="{% static 'assets/img/icon/ins-sms-tracking.svg' %}" alt=""></span>
+                                                <input type="email" placeholder="seargin@gmail.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="xb-item--field">
+                                                <span><img src="{% static 'assets/img/icon/call-calling.svg' %}" alt=""></span>
+                                                <input type="text" placeholder="+1 088 01 4800 24">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="xb-item--field">
+                                                <span><img src="{% static 'assets/img/icon/ins-home-hashtag.svg' %}" alt=""></span>
+                                                <select name="select" class="nice-select">
+                                                    <option value="1">Select Subject</option>
+                                                    <option value="2">Market Research & Analysis</option>
+                                                    <option value="3">Data Management & Analytics</option>
+                                                    <option value="4">CRM & ERP Solutions</option>
+                                                    <option value="4">Cloud Infrastructure</option>
+                                                    <option value="5">Technology Consulting</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="xb-item--field">
+                                                <span><img src="{% static 'assets/img/icon/messages-2.svg' %}" alt=""></span>
+                                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Write you message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="xb-item--field">
+                                                <button class="xb-btn w-100">Submit your Request</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xb-contact__shape">
+                        <img src="{% static 'assets/img/shape/cnt_shape.png' %}" alt="">
+                    </div>
+                    <div class="xb-contact__img">
+                        <img src="{% static 'assets/img/bg/cnt_img.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="contact-shape">
+                <div class="shape shape--1">
+                    <img data-parallax='{"y": "-90"}' src="{% static 'assets/img/shape/cnt_shape2.png' %}" alt="">
+                </div>
+                <div class="shape shape--2">
+                    <img data-parallax='{"y": "90"}' src="{% static 'assets/img/shape/cnt_shape3.png' %}" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- contact end -->
+
+        <!-- blog start -->
+        <section class="blog pt-150 pb-150">
+            <div class="container">
+                <div class="row g-12 mt-none-12">
+                    <div class="col-lg-6 mt-12">
+                        <div class="xb-blog h-100">
+                            <div class="xb-item--inner ul_li h-100" data-bg-color="#F3F4F5">
+                                <div class="sec-title">
+                                    <span class="subtitle ul_li"><img src="{% static 'assets/img/icon/hr_icon.png' %}" alt="">Check our Insight</span>
+                                    <h2 class="title mb-40">Explore Financial Insights</h2>
+                                    <p>Stay Informed and Empower Your Financial Future with <br> Our Popular Blog and Articles</p>
+                                </div>
+                                <div class="xb-item--shape">
+                                    <img src="{% static 'assets/img/shape/blog_shape.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-12">
+                        <div class="xb-blog">
+                            <div class="xb-item--inner">
+                                <span class="xb-item--cat">Finance Planing</span>
+                                <h2 class="xb-item--title border-effect"><a href="blog-single.html">Financial Mistakes to Avoid in Your 30s, 40s, and Beyond</a></h2>
+                                <p class="xb-item--content">Stay Informed and Empower Your Financial Future with Our Popular Blog and Articles and most popular insight ever.</p>
+                                <div class="xb-item--meta ul_li_between">
+                                    <div class="xb-item--author ul_li">
+                                        <div class="xb-item--avatar">
+                                            <img src="{% static 'assets/img/avatar/blog_avatar1.png' %}" alt="">
+                                        </div>
+                                        <span class="xb-item--name">Malandiya Dime</span>
+                                    </div>
+                                    <span class="xb-item--like">260 <i class="fas fa-heart"></i></span>
+                                    <span class="xb-item--date">12.January.2021<i class="far fa-clock"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-12">
+                        <div class="xb-blog">
+                            <div class="xb-item--inner">
+                                <span class="xb-item--cat color-2">Business' Managements</span>
+                                <h2 class="xb-item--title border-effect"><a href="blog-single.html">The Art of Budgeting Building Wealth One Dollar at a Time</a></h2>
+                                <p class="xb-item--content">Stay Informed and Empower Your Financial Future with Our Popular Blog and Articles and most popular insight ever.</p>
+                                <div class="xb-item--meta ul_li_between">
+                                    <div class="xb-item--author ul_li">
+                                        <div class="xb-item--avatar">
+                                            <img src="{% static 'assets/img/avatar/blog_avatar2.png' %}" alt="">
+                                        </div>
+                                        <span class="xb-item--name">OM Shan Omaly</span>
+                                    </div>
+                                    <span class="xb-item--like">450 <i class="fas fa-heart"></i></span>
+                                    <span class="xb-item--date">12.January.2021<i class="far fa-clock"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-12">
+                        <div class="xb-blog">
+                            <div class="xb-item--inner">
+                                <span class="xb-item--cat color-3">Insurance 2023</span>
+                                <h2 class="xb-item--title border-effect"><a href="blog-single.html">Planning for College  Navigating the Costs and Options</a></h2>
+                                <p class="xb-item--content">Stay Informed and Empower Your Financial Future with Our Popular Blog and Articles and most popular insight ever.</p>
+                                <div class="xb-item--meta ul_li_between">
+                                    <div class="xb-item--author ul_li">
+                                        <div class="xb-item--avatar">
+                                            <img src="{% static 'assets/img/avatar/blog_avatar3.png' %}" alt="">
+                                        </div>
+                                        <span class="xb-item--name">Corner Megrego</span>
+                                    </div>
+                                    <span class="xb-item--like">180 <i class="fas fa-heart"></i></span>
+                                    <span class="xb-item--date">12.January.2021<i class="far fa-clock"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="xb-blog__btn mt-60 text-center">
+                    <a class="xb-btn" href="blog.html">See More INsight</a>
+                </div>
+            </div>
+        </section>
+        <!-- blog end -->
+{% endblock %}

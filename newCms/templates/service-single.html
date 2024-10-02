@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% load cms_tags menu_tags sekizai_tags %}
+{% load static %}
+{% block content%}
+
+            <!-- breadcrumb start -->
+            {% placeholder "BreadCrumb" %}
+            <!-- breadcrumb end -->
+
+            <!-- services start -->
+            <section class="services pt-150 pb-150">
+                <div class="container">
+                    <div class="service-single">
+                        <div class="row justify-content-center mb-85">
+                            <div class="col-xl-8 col-lg-10">
+                                <div class="service-single__content">
+                                    {% placeholder "MainContent" %}
+										{% placeholder "FeaturePointers" %}
+										{% placeholder "ServiceOutcome" %}
+                                </div>
+                            </div>
+                        </div>
+                        
+						
+						{% placeholder "ProductTech_1" %}
+						
+						{% placeholder "ProductTech_2" %}
+						
+			
+			
+			<!-- blog start -->
+        <section class="blog pt-150 pb-150">
+            <div class="container">
+                <div class="row g-12 mt-none-12">
+                    <div class="col-lg-6 mt-12">
+                        <div class="xb-blog h-100">
+                            <div class="xb-item--inner ul_li h-100" data-bg-color="#F3F4F5">
+                                <div class="sec-title">
+                                    <span class="subtitle ul_li"><img src="{% static 'assets/img/icon/hr_icon.png' %}" alt="">Check our Insight</span>
+                                    <h2 class="title mb-40">Explore Financial Insights</h2>
+                                    <p>Stay Informed and Empower Your Financial Future with <br> Our Popular Blog and Articles</p>
+                                </div>
+                                <div class="xb-item--shape">
+                                    <img src="{% static 'assets/img/shape/blog_shape.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-12">
+                        <div class="xb-blog">
+                            <div class="xb-item--inner">
+                                <span class="xb-item--cat">Finance Planing</span>
+                                <h2 class="xb-item--title border-effect"><a href="blog-single.html">Financial Mistakes to Avoid in Your 30s, 40s, and Beyond</a></h2>
+                                <p class="xb-item--content">Stay Informed and Empower Your Financial Future with Our Popular Blog and Articles and most popular insight ever.</p>
+                                <div class="xb-item--meta ul_li_between">
+                                    <div class="xb-item--author ul_li">
+                                        <div class="xb-item--avatar">
+                                            <img src="{% static 'assets/img/avatar/blog_avatar1.png' %}" alt="">
+                                        </div>
+                                        <span class="xb-item--name">Malandiya Dime</span>
+                                    </div>
+                                    <span class="xb-item--like">260 <i class="fas fa-heart"></i></span>
+                                    <span class="xb-item--date">12.January.2021<i class="far fa-clock"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-12">
+                        <div class="xb-blog">
+                            <div class="xb-item--inner">
+                                <span class="xb-item--cat color-2">Business' Managements</span>
+                                <h2 class="xb-item--title border-effect"><a href="blog-single.html">The Art of Budgeting Building Wealth One Dollar at a Time</a></h2>
+                                <p class="xb-item--content">Stay Informed and Empower Your Financial Future with Our Popular Blog and Articles and most popular insight ever.</p>
+                                <div class="xb-item--meta ul_li_between">
+                                    <div class="xb-item--author ul_li">
+                                        <div class="xb-item--avatar">
+                                            <img src="{% static 'assets/img/avatar/blog_avatar2.png' %}" alt="">
+                                        </div>
+                                        <span class="xb-item--name">OM Shan Omaly</span>
+                                    </div>
+                                    <span class="xb-item--like">450 <i class="fas fa-heart"></i></span>
+                                    <span class="xb-item--date">12.January.2021<i class="far fa-clock"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-12">
+                        <div class="xb-blog">
+                            <div class="xb-item--inner">
+                                <span class="xb-item--cat color-3">Insurance 2023</span>
+                                <h2 class="xb-item--title border-effect"><a href="blog-single.html">Planning for College  Navigating the Costs and Options</a></h2>
+                                <p class="xb-item--content">Stay Informed and Empower Your Financial Future with Our Popular Blog and Articles and most popular insight ever.</p>
+                                <div class="xb-item--meta ul_li_between">
+                                    <div class="xb-item--author ul_li">
+                                        <div class="xb-item--avatar">
+                                            <img src="{% static 'assets/img/avatar/blog_avatar3.png' %}" alt="">
+                                        </div>
+                                        <span class="xb-item--name">Corner Megrego</span>
+                                    </div>
+                                    <span class="xb-item--like">180 <i class="fas fa-heart"></i></span>
+                                    <span class="xb-item--date">12.January.2021<i class="far fa-clock"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="xb-blog__btn mt-60 text-center">
+                    <a class="xb-btn" href="blog.html">See More INsight</a>
+                </div>
+            </div>
+        </section>
+        <!-- blog end -->
+						
+                    </div>
+                </div>
+            </section>
+            <!-- services end -->
+
+{% endblock %}
